@@ -1,0 +1,28 @@
+{
+  "name": "merlin_web_tests",
+  "description": "End-to-end tests",
+  "version": "0.0.0",
+  "license": "UNLICENSED",
+  "keywords": [
+    "web",
+    "end-to-end",
+    "e2e",
+    "functional",
+    "test",
+    "protractor",
+    "selenium"
+  ],
+  "author": "Andres Gonzalez",
+  "contributors": [
+    "Andres Gonzalez"
+  ],
+  "scripts": {
+    "postinstall": "webdriver-manager update --ie32",
+    "start": "webdriver-manager start --ie32",
+    "test": "protractor conf.js"
+  },
+  "devDependencies": {
+    "@types/jasmine": "^2.8.6",
+    "protractor": "^5.3.1"
+  }
+}
